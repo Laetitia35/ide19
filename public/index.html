@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Tarifs-Transports"
+      content="La solution business pour vos calculer les coûts de vos transports"
+    />
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+<script LANGUAGE=javascript>
+function ImportFromXLS_Direct() {
+var Path_file; 	// Chemin du fichier
+var oExcel; // Application Excel
+var oWork;
+var oSheet;
+
+// Chemin du fichier EXCEL avec des "/" et non des ""
+var Path_file = "D:/Programmation/Fintech/tarifs_transports/src/data/Simulateur.xls"
+
+// Lancement de EXCEL
+oExcel = new ActiveXObject('Excel.Application');
+oWork = oExcel.WorkBooks.Open(Path_file);
+oSheet = oWork.Sheets("Sondes sur Archives Fil Eau");
+oSheet.Activate();
+
+// Pour rendre EXCEL visible sinon supprimer la ligne
+oExcel.Visible = true; 
+}
+</script>
+  </body>
+</html>

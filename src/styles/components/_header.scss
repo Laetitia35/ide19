@@ -1,0 +1,27 @@
+.headergen {
+position: absolute;
+top: 0px;
+padding: 10px;
+height: 10%;
+width: 100%;
+background: #111A3D;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  grid-template-areas: "Logo Nav";
+}
+.nav {
+    grid-area: Nav;
+    position: absolute;
+    display:flex;
+    right: 5%;
+  }
+.logo {
+    grid-area: Logo;
+}
+ img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        padding : 10px;
+    }

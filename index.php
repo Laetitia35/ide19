@@ -90,7 +90,7 @@
 				<?php } else { ?>
 				
 					<h1>S'identifier</h1>
-					<p> Veuiller entrer vos informations</p>
+					<p>Veuillez entrer vos informations</p>
 
 					<?php if(isset($_GET['error'])) {
 
@@ -110,7 +110,8 @@
 					</form>
 				
 
-					<p class="grey">Première visite sur Tarifs-Transports ?<br><a href="inscription.php">Inscrivez-vous ici.</a></p>
+					<p class="grey">Première visite sur Tarifs-Transports ?<br>
+					<a href="inscription.php">Inscrivez-vous ici.</a></p>
 				<?php } ?>
 		</div>
 	</section>

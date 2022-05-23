@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/d/xampp/htdocs/ide19/
+    - /bin/cp -R images $DEPLOYPATH

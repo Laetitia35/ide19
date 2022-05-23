@@ -10,7 +10,10 @@ const PageCommercial = () => {
         <div className="headerPage">
           <Header />
         </div>
-        {/*Image de fond */}
+        {/*fond animé */}
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
 
         {/*Contenu de la page */}
         <div className="page-main">
@@ -18,7 +21,7 @@ const PageCommercial = () => {
           <h1>Page commercial</h1>
         </div>
         <div className="footerPage">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </main>

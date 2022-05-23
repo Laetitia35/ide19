@@ -84,7 +84,7 @@
 							echo'<div class= "alert success"> Vous êtes maintenant connecté.</div>';
 						} ?>
 
-					<a href="#">Accéder à votre feuille de calculs</a><br>
+					<a href="Home.js">Accéder à votre feuille de calculs</a><br>
 					<small><a href="logout.php">Déconnnexion</a></small>
 
 				<?php } else { ?>

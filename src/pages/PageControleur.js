@@ -11,7 +11,10 @@ const PageControleur = () => {
         <div className="headerPage">
           <Header />
         </div>
-        {/*Image de fond */}
+        {/*fond animé */}
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
 
         {/*Contenu de la page */}
         <div className="page-main">

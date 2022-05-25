@@ -13,15 +13,15 @@ if (getenv('JAWSDB_URL') !== false) {
 } else {
     $username = 'root';
     $password = '';
-    $database = 'test';
+    $database = 'tarif-transports';
     $hostname = 'localhost';
 }
 
 
 try {
-    $conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+    $db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
     // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
     }
 catch(PDOException $e)

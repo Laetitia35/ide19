@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE user (
 
     id INT AUTO_INCREMENT ,
     email TEXT ,

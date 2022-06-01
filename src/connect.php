@@ -9,7 +9,7 @@ if (getenv('JAWSDB_URL') !== false) {
     $username = $dbparts['user'];
     $password = $dbparts['pass'];
     $database = ltrim($dbparts['path'],'/');
-    $role = $role['commercial || controleurdegestion'] ; 
+    $role = $_POST['role']; 
 
 } else {
     $username = 'k2ttqwi9grba4ovh';

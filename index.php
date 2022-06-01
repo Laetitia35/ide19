@@ -84,7 +84,7 @@
 							echo'<div class= "alert success"> Vous êtes maintenant connecté.</div>';
 						} ?>
 
-					<a href="Home.js">Accéder à votre feuille de calculs</a><br>
+					<a href="src\pages\Home.js">Accéder à votre feuille de calculs</a><br>
 					<small><a href="logout.php">Déconnnexion</a></small>
 
 				<?php } else { ?>
@@ -103,8 +103,8 @@
 					<form method="post" action="index.php">
 						<input type="email" name="email" placeholder="Votre adresse email" required />
 						<input type="password" name="password" placeholder="Mot de passe" required />
-						<label id="job"><input type="radio" name="role" value="commercial" checked />Commercial</label>
-						<label id="job"><input type="radio" name="role" value="controleurdegestion" checked />Controleur de gestion</label>
+						<label id="job"><input type="radio" name="role" value="commercial" />Commercial</label>
+						<label id="job"><input type="radio" name="role" value="controleurgestion" />Controleur de gestion</label>
 						<button type="submit">Se Connecter</button>
 						<label id="option"><input type="checkbox" name="auto" checked />Se souvenir de moi</label>
 					</form>

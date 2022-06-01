@@ -11,10 +11,10 @@ if (getenv('JAWSDB_URL') !== false) {
     $database = ltrim($dbparts['path'],'/');
 
 } else {
-    $username = 'root';
-    $password = '';
-    $database = 'tarif-transports';
-    $hostname = 'localhost';
+    $username = 'k2ttqwi9grba4ovh';
+    $password = 'c22qkd11aw9kk06u';
+    $database = 'iv9l3u5ku3695br9';
+    $hostname = 'ebh2y8tqym512wqs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
 }
 
 

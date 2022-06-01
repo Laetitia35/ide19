@@ -49,8 +49,8 @@
 		$password = "aq1".sha1($password."123")."25";
 		
 		//envoi
-		$req= $db->prepare("INSERT INTO user(email, password, secret) VALUES (?,?,?)");
-		$req->execute(array($email, $password, $secret));
+		$req= $db->prepare("INSERT INTO user(email, password, secret) VALUES (?,?,?) role");
+		$req->execute(array($email, $password, $secret, $role));
 
 		header('location: inscription.php?success=1');
 		exit();
@@ -88,8 +88,8 @@
 				<input type="email" name="email" placeholder="Votre adresse email" required />
 				<input type="password" name="password" placeholder="Mot de passe" required />
 				<input type="password" name="password_two" placeholder="Retapez votre mot de passe" required /></br>
-				<label id="job"><input type="radio" name="auto" checked />Commercial</label>
-				<label id="job"><input type="radio" name="auto" checked />Controleur de gestion</label>
+				<label id="job"><input type="radio" name="role" value="commercial" checked />Commercial</label>
+				<label id="job"><input type="radio" name="role" value = "controleur_de_gestion" checked />Controleur de gestion</label>
 				<button type="submit">S'inscrire</button>
 			</form>
 

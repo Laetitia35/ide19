@@ -4,13 +4,13 @@
 
 	require('src/log.php');
 
-	if(!empty($_POST['email']) && !empty($_POST['password'])) {
+	if(!empty($_POST['email']) && !empty($_POST['passwords'])) {
 
 		require('src/connect.php');
 
 		// variables
 		$email = htmlspecialchars($_POST['email']);
-		$password = htmlspecialchars($_POST['password']);
+		$password = htmlspecialchars($_POST['passwords']);
 
 		// adresse email syntaxe
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -40,7 +40,7 @@
 
 		while ($user = $req->fetch()) {
 
-			if($password == $user['password']) {
+			if($password == $user['passwords']) {
 
 				$_SESSION['connect'] = 1;
 				$_SESSION['email'] = $user['email'];
@@ -104,7 +104,7 @@
 						<input type="email" name="email" placeholder="Votre adresse email" required />
 						<input type="password" name="password" placeholder="Mot de passe" required />
 						<label id="job"><input type="radio" name="role" value="commercial" checked />Commercial</label>
-						<label id="job"><input type="radio" name="role" value="controleur_de_gestion" checked />Controleur de gestion</label>
+						<label id="job"><input type="radio" name="role" value="controleurdegestion" checked />Controleur de gestion</label>
 						<button type="submit">Se Connecter</button>
 						<label id="option"><input type="checkbox" name="auto" checked />Se souvenir de moi</label>
 					</form>

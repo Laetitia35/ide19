@@ -5,13 +5,14 @@
 	
 	require('src/log.php');
 
-	if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_two'])) {
+	if(!empty($_POST['email']) && !empty($_POST['passwords']) && !empty($_POST['password_two'])) {
 
 		require('src/connect.php');
 
 		// variables
+		$role = $_POST['role'];
 		$email = htmlspecialchars($_POST['email']);
-		$password = htmlspecialchars($_POST['password']);
+		$password = htmlspecialchars($_POST['passwords']);
 		$password_two = htmlspecialchars($_POST ['password_two']);
 
 		// password = password_two
@@ -49,7 +50,7 @@
 		$password = "aq1".sha1($password."123")."25";
 		
 		//envoi
-		$req= $db->prepare("INSERT INTO user(email, password, secret) VALUES (?,?,?) role");
+		$req= $db->prepare("INSERT INTO user(email, password, secret, role) VALUES (?,?,?)");
 		$req->execute(array($email, $password, $secret, $role));
 
 		header('location: inscription.php?success=1');
@@ -86,10 +87,10 @@
 
 			<form method="post" action="inscription.php">
 				<input type="email" name="email" placeholder="Votre adresse email" required />
-				<input type="password" name="password" placeholder="Mot de passe" required />
+				<input type="password" name="passwords" placeholder="Mot de passe" required />
 				<input type="password" name="password_two" placeholder="Retapez votre mot de passe" required /></br>
 				<label id="job"><input type="radio" name="role" value="commercial" checked />Commercial</label>
-				<label id="job"><input type="radio" name="role" value = "controleur_de_gestion" checked />Controleur de gestion</label>
+				<label id="job"><input type="radio" name="role" value="controleurgestion"/>Controleur de gestion</label>
 				<button type="submit">S'inscrire</button>
 			</form>
 

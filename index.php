@@ -10,7 +10,7 @@
 
 		// variables
 		$email = htmlspecialchars($_POST['email']);
-		$password = htmlspecialchars($_POST['passwords']);
+		$passwords = htmlspecialchars($_POST['passwords']);
 
 		// adresse email syntaxe
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {

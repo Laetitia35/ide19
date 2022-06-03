@@ -84,7 +84,7 @@
 							echo'<div class= "alert success"> Vous êtes maintenant connecté.</div>';
 						} ?>
 
-					<a href="src\pages\Home.js">Accéder à votre feuille de calculs</a><br>
+					<a href="https://grand-sable-6e6df3.netlify.app/">Accéder à votre feuille de calculs</a><br>
 					<small><a href="logout.php">Déconnnexion</a></small>
 
 				<?php } else { ?>

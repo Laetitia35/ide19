@@ -12,7 +12,7 @@
 		// variables
 		$role = $_POST['role'];
 		$email = htmlspecialchars($_POST['email']);
-		$password = htmlspecialchars($_POST['passwords']);
+		$passwords = htmlspecialchars($_POST['passwords']);
 		$password_two = htmlspecialchars($_POST ['password_two']);
 
 		// password = password_two

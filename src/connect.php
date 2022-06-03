@@ -16,7 +16,8 @@ if (getenv('JAWSDB_URL') !== false) {
     $password = 'c22qkd11aw9kk06u';
     $database = 'iv9l3u5ku3695br9';
     $hostname = 'ebh2y8tqym512wqs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
-}
+
+} 
 
 
 try {

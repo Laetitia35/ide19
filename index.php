@@ -21,7 +21,7 @@
 
 		// chiffrage du mot de passe
 
-		$password = "aq1".sha1($password."123")."25";
+		$passwords = "aq1".sha1($passwords."123")."25";
 		
 		//email deja utilisé
 		$req = $db->prepare("SELECT count(*) as numberEmail FROM user WHERE email = ?");
@@ -102,7 +102,7 @@
 
 					<form method="post" action="index.php">
 						<input type="email" name="email" placeholder="Votre adresse email" required />
-						<input type="password" name="password" placeholder="Mot de passe" required />
+						<input type="passwords" name="passwords" placeholder="Mot de passe" required />
 						<label id="job"><input type="radio" name="role" value="commercial" />Commercial</label>
 						<label id="job"><input type="radio" name="role" value="controleurgestion" />Controleur de gestion</label>
 						<button type="submit">Se Connecter</button>

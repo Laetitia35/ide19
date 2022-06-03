@@ -40,7 +40,7 @@
 
 		while ($user = $req->fetch()) {
 
-			if($password == $user['passwords']) {
+			if($passwords == $user['passwords']) {
 
 				$_SESSION['connect'] = 1;
 				$_SESSION['email'] = $user['email'];
